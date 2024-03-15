@@ -28,7 +28,7 @@ public class PartidaDeXadrez {
 	
 	private void setupInicial() {
 		tabuleiro.moverPeca(new Torre(tabuleiro, Color.WHITE), new Posicao(2, 1));
-		tabuleiro.moverPeca(new Rei(tabuleiro, Color.BLACK), new Posicao(0, 4));
+		tabuleiro.moverPeca(new Rei(tabuleiro, Color.BLACK), new Posicao(2, 4));
 		tabuleiro.moverPeca(new Rei(tabuleiro, Color.BLACK), new Posicao(7, 4));
 	}
 }
