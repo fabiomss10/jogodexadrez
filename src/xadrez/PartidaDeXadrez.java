@@ -1,11 +1,8 @@
  package xadrez;
 
-import tabuleiro.Peca;
-import tabuleiro.Posicao;
 import tabuleiro.Tabuleiro;
 import xadrez.pecas.Rei;
 import xadrez.pecas.Torre;
-import xadrez.PosicaoXadrez;
  
 public class PartidaDeXadrez {
 	
