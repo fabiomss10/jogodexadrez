@@ -8,6 +8,4 @@ public class ExcecoesXadrez extends ExcecoesTabuleiro{
 	public ExcecoesXadrez(String msg) {
 		super(msg);
 	}
-	
-	
 }
