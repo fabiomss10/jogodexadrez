@@ -2,6 +2,7 @@ package app;
 
 import java.util.Scanner;
 
+                          
 import xadrez.PartidaDeXadrez;
 import xadrez.PecaXadrez;
 import xadrez.PosicaoXadrez;
@@ -16,8 +17,7 @@ public class Programa {
 
 		while(true) {
 			Interface.clearScreen();
-			
-			Interface.printTabuleiro(partidaDeXadrez.getPecas());
+			Interface.printPartida(partidaDeXadrez);
 			System.out.println(" ");
 			System.out.println("Procurar: ");
 			PosicaoXadrez procurar = Interface.lerPosicao(sc);
@@ -32,7 +32,8 @@ public class Programa {
 			PosicaoXadrez alvo = Interface.lerPosicao(sc);
 
 			PecaXadrez pecaCapturada = partidaDeXadrez.MovimentarPeca(procurar, alvo);
-			 
+			
+			
+			}
 		}
 	}
-}
