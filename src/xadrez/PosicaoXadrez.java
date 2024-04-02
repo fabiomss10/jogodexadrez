@@ -27,12 +27,12 @@ public class PosicaoXadrez {
 	}
 
 	
-	protected Posicao posicaoDeMatrizParaXadrex() {
+	protected Posicao posicaoDeMatrizParaXadrez() {
 		return new Posicao(8 - linha, coluna - 'a');
 	}
 	
 	protected static PosicaoXadrez posicaoDeXadrezParaMatriz(Posicao posicao) {
-		return new PosicaoXadrez((char)('a' - posicao.getColuna()), 8 - posicao.getLinha());
+		return new PosicaoXadrez((char)('a' + posicao.getColuna()), 8 - posicao.getLinha());
 	}
 	
 	@Override

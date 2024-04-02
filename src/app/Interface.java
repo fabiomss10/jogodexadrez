@@ -61,6 +61,9 @@ public class Interface {
 		System.out.println();
 		System.out.println("Vez de:" + partidaDeXadrez.getTurn());
 		System.out.println("Esperando o jogador:" + partidaDeXadrez.getCurrentPlayer());
+		if(partidaDeXadrez.getCheck()) {
+			System.out.println("CHEQUE!");
+		}
 	}
 	
 	
