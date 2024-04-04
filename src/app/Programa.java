@@ -20,7 +20,7 @@ public class Programa {
 		
 
 
-		while(true) {
+		while(!partidaDeXadrez.getCheckMate()) {
 			try {
 			Interface.clearScreen();
 			Interface.printPartida(partidaDeXadrez, capturado);
@@ -53,5 +53,7 @@ public class Programa {
 			}
 			
 			}
+		Interface.clearScreen();
+		Interface.printPartida(partidaDeXadrez, capturado);
 		}
 	}

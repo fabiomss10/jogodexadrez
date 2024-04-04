@@ -60,9 +60,15 @@ public class Interface {
 		printPecasCapturadas(capturado);
 		System.out.println();
 		System.out.println("Vez de:" + partidaDeXadrez.getTurn());
-		System.out.println("Esperando o jogador:" + partidaDeXadrez.getCurrentPlayer());
-		if(partidaDeXadrez.getCheck()) {
-			System.out.println("CHEQUE!");
+		if (!partidaDeXadrez.getCheckMate()) {
+			System.out.println("Esperando jogador: "+ partidaDeXadrez.getCurrentPlayer());
+			if(partidaDeXadrez.getCheck()) {
+				System.out.println("CHEQUE!");
+			}
+		
+		} else {
+			System.out.println("CHEQUE-MATE");
+			System.out.println("Vencedor: " + partidaDeXadrez.getCurrentPlayer());
 		}
 	}
 	
@@ -71,7 +77,7 @@ public class Interface {
 	
 	public static void printTabuleiro(PecaXadrez[][] pecas) {
 		for(int i=0; i< pecas.length; i++) {
-			System.out.print((8 - 1) + " ");
+			System.out.print((8 - i) + " ");
 			for (int j = 0; j<pecas.length; j++) {
 				printPeca(pecas[i][j], false);
 			}
